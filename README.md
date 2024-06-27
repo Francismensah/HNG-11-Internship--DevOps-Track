@@ -8,7 +8,7 @@ This repository contains all the tasks and projects I will be completing as part
 
 The repository is structured as follows:
 
-- **[Task 1: Static Website Deployment](./Stage-0-Task)**
+- **[Task 1: Static Website Deployment](./Stage-0-Task%20/)**
   - Description: Deploy a static website onto a cloud platform (AWS EC2, Azure, or GCP) using NGINX or Apache.
   - Directory: `task-1-static-website-deployment`
   - Contents: HTML, CSS, JavaScript files, and configuration scripts.
