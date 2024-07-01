@@ -30,9 +30,13 @@ This repository contains a bash script, `create_users.sh`, designed to automate 
 
 3. Prepare an input file (e.g., `user_list.txt`) with the following format:
     ```
-    light; sudo,dev,www-data
-    idimma; sudo
-    mayowa; dev,www-data
+    alice; sudo,developers,sysadmins
+    bob; developers,qa
+    charlie; sysadmins,network,backup
+    david; qa,testers
+    eve; developers,security
+    frank; security,network
+    grace; backup,storage
     ```
 
 4. Run the script with the input file as an argument:
