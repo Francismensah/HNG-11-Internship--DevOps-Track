@@ -2,15 +2,15 @@
 
 # Check if the user has provided a file name
 if [ $# -eq 0 ]; then
-    echo "Usage: $0 <name-of-text-file>"
+    echo "Usage: $0 user_list.txt"
     exit 1
 fi
 
-input_file=$1
+users_file=$1
 
-# Ensure the input file exists
-if [ ! -f $input_file ]; then
-    echo "File $input_file does not exist."
+# Ensure the users file exists
+if [ ! -f $users_file ]; then
+    echo "File $users_file does not exist."
     exit 1
 fi
 
@@ -28,7 +28,7 @@ touch $log_file
 # Start logging
 echo "User creation process started at $(date)" >> $log_file
 
-# Process each line of the input file
+# Process each line of the users file
 while IFS=';' read -r username groups; do
     # Remove whitespace
     username=$(echo $username | xargs)
@@ -66,7 +66,7 @@ while IFS=';' read -r username groups; do
     chown $username:$username /home/$username
     echo "Set permissions for /home/$username" >> $log_file
 
-done < "$input_file"
+done < "$users_file"
 
 # Secure the password file
 chmod 600 $password_file
