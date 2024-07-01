@@ -19,8 +19,8 @@ This repository contains a bash script, `create_users.sh`, designed to automate 
 
 1. Clone the repository:
     ```bash
-    git clone <repository-url>
-    cd <repository-directory>
+    git clone https://github.com/Francismensah/HNG-11-Internship--DevOps-Track.git
+    cd /HNG-11-Internship--DevOps-Track/Stage-1-Task
     ```
 
 2. Ensure the script is executable:
